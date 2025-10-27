@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import Image from './images/Image.png';
+import logo from './Images/logo.png';
 import { BookOpenText, PackageOpen, Headset, Menu, X } from "lucide-react";
 
 export default function Navbar() {
@@ -34,7 +34,7 @@ export default function Navbar() {
 
         {/* Logo */}
         <div className="w-40">
-          <img src={Image} alt="Logo" />
+          <img src={logo} alt="Logo" />
         </div>
 
         {/* Desktop Links */}

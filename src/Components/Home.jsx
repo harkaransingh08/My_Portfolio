@@ -1,5 +1,5 @@
 import React from 'react'
-import Image_2 from './Images/Image_2.png';
+import pfp from './Images/pfp.png';
 
 export default function Home() {
   return (
@@ -10,7 +10,7 @@ export default function Home() {
     </ul>
 
     <ul >
-      <img src={Image_2} alt="image" 
+      <img src={pfp} alt="image" 
       className='flex rounded-full  h-70  bg-[#0b0033]'
       />
     </ul>
