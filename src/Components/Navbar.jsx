@@ -23,7 +23,7 @@ export default function Navbar() {
   }, [isMenuOpen]);
 
   const NavBar = [
-    { name: "Summary", path: "/summary", icon: <BookOpenText /> },
+    { name: "Summry", path: "/summary", icon: <BookOpenText /> },
     { name: "Projects", path: "/projects", icon: <PackageOpen /> },
     { name: "Contact", path: "/contact", icon: <Headset /> },
   ];
