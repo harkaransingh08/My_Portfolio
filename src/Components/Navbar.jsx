@@ -49,10 +49,10 @@ export default function Navbar() {
         </ul>
 
         {/* Mobile Menu Button */}
-        <div className="md:hidden rounded-md bg-[#0b0033]">
+        <div className="md:hidden">
           <button
             onClick={() => setIsMenuOpen(prev => !prev)}
-            className="p-2 focus:outline-none"
+            className="p-2 focus:outline-none rounded-xl"
             aria-label={isMenuOpen ? "Close menu" : "Open menu"}
           >
             {isMenuOpen ? <X size={28} /> : <Menu size={28} />}
@@ -60,7 +60,7 @@ export default function Navbar() {
         </div>
 
         {/* Resume Button (desktop) */}
-        <div className="hidden md:flex mr-20 bg-[#0b0033] font-medium h-10 w-40 items-center justify-center rounded-2xl hover:text-yellow-400 transition-colors duration-300">
+        <div className="hidden md:flex mr-20 bg-[#0b0033] font-medium rounded-md h-10 w-40 items-center justify-center rounded-2xl hover:text-yellow-400 transition-colors duration-300">
           <button>Download Resume</button>
         </div>
 
@@ -69,19 +69,19 @@ export default function Navbar() {
           className={`absolute top-full left-0 w-full md:hidden z-50 transition-all duration-300
             ${isMenuOpen ? "transform translate-y-0 opacity-100" : "transform -translate-y-4 opacity-0 pointer-events-none"}`}
         >
-          <div className="bg-[#0b0033] text-white flex flex-col items-center py-4 gap-2">
+          <div className="bg-[#0b0033] text-white rounded-xl flex flex-col items-center py-4 gap-2">
             {NavBar.map(link => (
               <div
                 key={link.path}
                 onClick={() => setIsMenuOpen(false)}
-                className="flex items-center gap-3 w-full px-6 py-3 cursor-pointer hover:bg-white/5"
+                className="flex items-center gap-3   w-full px-6 py-3  hover:text-yellow-400 cursor-pointer hover:bg-white/5"
               >
                 {link.icon}
-                <span className="font-medium">{link.name}</span>
+                <span className="font-medium hover:text-yellow-400">{link.name}</span>
               </div>
             ))}
             <button
-              className="mx-auto my-3 px-6 py-2 rounded-xl font-semibold bg-yellow-400 text-black"
+              className="mx-auto my-3 px-6 cursor-pointer text- py-2 rounded-xl font-semibold bg-yellow-400 text-black"
               onClick={() => setIsMenuOpen(false)}
             >
               Download Resume

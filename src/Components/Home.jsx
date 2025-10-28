@@ -11,7 +11,7 @@ export default function Home() {
   but curiosity never left the jungle.`;
 
   return (
-    <div className="flex justify-evenly py-20">
+    <div className="md:flex flex-col md:flex-row items-center ml-9  justify-evenly py-20">
 
       {/* Animated text */}
       <motion.div
