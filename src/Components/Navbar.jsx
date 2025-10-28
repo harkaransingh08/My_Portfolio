@@ -49,7 +49,7 @@ export default function Navbar() {
         </ul>
 
         {/* Mobile Menu Button */}
-        <div className="md:hidden rounded-md">
+        <div className="md:hidden rounded-md bg-[#0b0033]">
           <button
             onClick={() => setIsMenuOpen(prev => !prev)}
             className="p-2 focus:outline-none"
