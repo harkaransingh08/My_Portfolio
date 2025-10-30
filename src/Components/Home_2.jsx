@@ -21,6 +21,8 @@ export default function Home_2() {
         <ul className='flex justify-evenly items-center gap-10 px-10 flex-wrap mb-90 '>
           <li className='w-60 flex justify-center'>
 
+
+
             <motion.img
               src={ReactLogo}
               alt="React"
@@ -34,24 +36,94 @@ export default function Home_2() {
                 transition: { duration: 0.15, ease: "easeOut" }
               }}
             />
+            <motion
+              src={ReactLogo}
+              alt="React"
+              className="object-contain"
+            />
 
           </li>
           <li className='w-60 mr-6 flex justify-center'>
-            <motion.img
-            src={javascript}
-            alt="JavaScript"
-            animate = {{y:[0,-20,0]}}
-            transition={{duration : 3.5, repeat : Infinity , ease : "easeInOut" }}
-            />
+            <motion.div
+
+              animate={{ y: [0, -20, 0] }}
+              transition={{ duration: 3, repeat: Infinity, ease: "linear" }}
+              className='inline-block'
+
+            >
+
+              <motion.img
+                src={javascript}
+                alt="JavaScript"
+                className="object-contain"
+                whileHover={{
+                  scale: 1.6,
+                  transition: { duration: 0.15, ease: "easeOut" }
+                }}
+              />
+
+            </motion.div>
+
           </li>
+
+
           <li className='w-40 flex mr-16 justify-center'>
-            <img src={cLangauga} alt="C Language" />
+
+            <motion.div
+              className='inline-block'
+              animate={{ rotate: [-5, 5, -5] }}
+              transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
+            >
+              <motion.img
+                src={cLangauga}
+                alt="C Language"
+                whileHover={{
+                  scale: 1.6
+                }}
+              />
+
+            </motion.div>
+
+
+
           </li>
           <li className='w-40 flex ml-2 justify-center'>
-            <img src={html} alt="html" />
+
+            <motion.div
+              className='inline-block'
+              animate={{ scale: [1, 1.2, 1] }}
+              transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
+            >
+              <motion.img
+                src={html}
+                alt="html"
+                whileHover={{
+                  scale: 1.6,
+                  transition: { duration: 0.15 }
+                }}
+              />
+            </motion.div>
+
           </li>
           <li className='w-80 mr-3flex justify-center'>
-            <img src={css} alt="css" />
+
+            <motion.div
+  className="inline-block"
+  animate={{ rotate: [0, 10, -10, 0] }}
+  transition={{ duration: 1, repeat: Infinity, ease: "linear" }}
+>
+              <motion.img
+
+                src={css}
+                alt="css"
+                 className="object-contain"
+                whileHover={{
+                  scale: 1.6,
+                  transition: { duration: 0.15 }
+                }}
+              />
+            </motion.div>
+
           </li>
         </ul>
       </div>
