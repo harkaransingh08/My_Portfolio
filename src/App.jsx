@@ -1,18 +1,22 @@
 import React from "react";
 import Navbar from "./Components/Navbar";
 import Home from "./Components/Home";
-
+import Home_2 from "./Components/Home_2";
 
 export default function App() {
   return (
-    <div className="relative h-screen text-white">
-      
-      <div className="absolute inset-0 -z-10 h-full w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]"></div>
+    <div className="relative text-white overflow-x-hidden bg-gradient-to-b from-[#000000] via-[#0a0047] to-[#020024]">
       <Navbar />
 
-      <div>
+      {/* Layer 1 */}
+      <section className="min-h-screen flex items-center justify-center">
         <Home />
-      </div>
+      </section>
+
+      {/* Layer 2 */}
+      <section className="min-h-screen flex items-center justify-center">
+        <Home_2 />
+      </section>
     </div>
   );
 }

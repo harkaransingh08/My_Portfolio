@@ -6,7 +6,7 @@ export default function Navbar() {
   const [isVisible, setIsVisible] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  useEffect(() => { setIsVisible(true); }, []);
+  useEffect(( ) => { setIsVisible(true); }, []);
 
   // Close on Escape
   useEffect(() => {
@@ -93,3 +93,4 @@ export default function Navbar() {
     </div>  
   );
 }
+  

@@ -2,6 +2,7 @@ import React from "react";
 import pfp from "./Images/pfp.png";
 import { motion } from "framer-motion";
 import { fadeInUp, typingText, typingLetter } from "../Animations/Home_animation";
+import "../App.css";
 
 export default function Home() {
   const text = `I’m Monkey, a curious mind trapped in a suit, driven by instinct and imagination.
@@ -11,12 +12,13 @@ export default function Home() {
   but curiosity never left the jungle.`;
 
   return (
-    <div className="md:flex flex-col md:flex-row items-center  justify-evenly py-20">
+    <div className="md:flex flex-col md:flex-row items-center gap-20 justify-evenly mb-50">
 
       {/* Animated text */}
       <motion.div
-        className="max-w-xl text-justify leading-relaxed text-white font-medium text-lg"
+        className="max-w-xl text-justify leading-relaxed text-white font-medium text-lg font-oswald"
         variants={typingText}
+        style={{ fontFamily: "'Oswald', sans-serif" }}
         initial="hidden"
         whileInView="visible"
       >
@@ -36,7 +38,7 @@ export default function Home() {
         <img
           src={pfp}
           alt="image"
-          className="flex rounded-full h-70 bg-[#0b0033]"
+          className="flex rounded-full  h-70 bg-[#080029]"
         />
       </motion.div>
     </div>
