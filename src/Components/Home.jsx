@@ -13,7 +13,7 @@ export default function Home() {
 
   return (
     <div className="md:flex flex-col md:flex-row items-center mb-40 gap-20 justify-evenly ">
-
+`
       {/* Animated text */}
       <motion.div
         className="max-w-xl text-justify leading-relaxed text-white font-medium text-lg font-oswald"

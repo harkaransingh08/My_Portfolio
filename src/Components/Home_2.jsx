@@ -25,12 +25,9 @@ export default function Home_2() {
       
 
       <div className='cursor-pointer mt-30'>
-        <ul className='flex justify-evenly items-center gap-10 px-10 flex-wrap mb-90 '>
-          <li className='w-60 flex justify-center'>
-
-
-
-            <motion.img
+        <ul className='flex justify-evenly items-center gap-10 px-0 flex-wrap mb-90  '>
+          <li className='w-60 flex justify-center bg-white/10 backdrop-blur-md w-40 h-40 rounded-full p-5 mr-6'>
+              <motion.img
               src={ReactLogo}
               alt="React"
               className="object-contain"
@@ -50,7 +47,7 @@ export default function Home_2() {
             />
 
           </li>
-          <li className='w-60 mr-6 flex justify-center'>
+          <li className='w-60 mr-6 mb-5 flex justify-center bg-white/10 backdrop-blur-md w-40 h-40 rounded-full p-5 mr-6'>
             <motion.div
 
               animate={{ y: [0, -20, 0] }}
@@ -94,7 +91,7 @@ export default function Home_2() {
 
 
           </li>
-          <li className='w-40 flex ml-2 justify-center'>
+          <li className='w-70 flex ml-2 justify-center'>
 
             <motion.div
               className='inline-block'
@@ -112,7 +109,7 @@ export default function Home_2() {
             </motion.div>
 
           </li>
-          <li className='w-80 mr-3flex justify-center'>
+          <li className='w-60 mr-3flex justify-center'>
 
             <motion.div
               className="inline-block"
@@ -125,7 +122,7 @@ export default function Home_2() {
                 alt="css"
                 className="object-contain"
                 whileHover={{
-                  scale: 1.6,
+                  scale: 1.2,
                   transition: { duration: 0.15 }
                 }}
               />
