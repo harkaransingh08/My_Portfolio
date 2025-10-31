@@ -41,11 +41,7 @@ export default function Home_2() {
                   transition: { duration: 0.15, ease: "easeOut" }
                 }}
               />
-              <motion
-                src={ReactLogo}
-                alt="React"
-                className="object-contain"
-              />
+              
             </div>
             <ul className='text-md bg-white/10 backdrop-blur-md rounded-full p-5 mr-6 font-bold flex flex-col gap-5 text-white text-center max-w-[190px] mt-2'>
               <li className='hover:text-cyan-300 hover:scale-110 transition-transform duration-300'>Built interactive and reusable UI components</li>
@@ -181,6 +177,7 @@ export default function Home_2() {
             </ul>
           </li>
         </ul>
+          <hr/>
       </div>
     </div>
   )
