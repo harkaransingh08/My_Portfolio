@@ -12,11 +12,11 @@ export default function Home() {
   but curiosity never left the jungle.`;
 
   return (
-    <div className="md:flex flex-col md:flex-row items-center mb-40 gap-20 justify-evenly ">
+    <div className="md:flex flex-col md:flex-row  items-center mb-40 gap-20 justify-evenly ">
 
       {/* Animated text */}
       <motion.div
-        className="max-w-xl text-justify leading-relaxed text-white font-medium text-lg font-oswald"
+        className="max-w-xl text-justify leading-relaxed text-white text-2xl font-medium  font-oswald"
         variants={typingText}
         style={{ fontFamily: "'Oswald', sans-serif" }}
         initial="hidden"
