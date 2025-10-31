@@ -12,10 +12,17 @@ export default function Home_2() {
   return (
     <div>
 
-      <h1 className="flex justify-center font-bold text-4xl text-white bg-white/10 backdrop-blur-md px-10 py-3 rounded-2xl mb-10"
+      <motion.div
+        initial={{ opacity: 0, y: -50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+      ><h1 className="flex justify-center font-bold text-4xl hover:underline transition-all duration-300 text-white cursor-pointer hover:text-yellow-400  bg-white/10 backdrop-blur-md px-10 py-3 rounded-full mb-10"
         style={{ fontFamily: "'Oswald', sans-serif" }}>
         The Languages I Learned
       </h1>
+      
+      </motion.div>
+      
 
       <div className='cursor-pointer mt-30'>
         <ul className='flex justify-evenly items-center gap-10 px-10 flex-wrap mb-90 '>
@@ -108,15 +115,15 @@ export default function Home_2() {
           <li className='w-80 mr-3flex justify-center'>
 
             <motion.div
-  className="inline-block"
-  animate={{ rotate: [0, 10, -10, 0] }}
-  transition={{ duration: 1, repeat: Infinity, ease: "linear" }}
->
+              className="inline-block"
+              animate={{ rotate: [0, 10, -10, 0] }}
+              transition={{ duration: 1, repeat: Infinity, ease: "linear" }}
+            >
               <motion.img
 
                 src={css}
                 alt="css"
-                 className="object-contain"
+                className="object-contain"
                 whileHover={{
                   scale: 1.6,
                   transition: { duration: 0.15 }

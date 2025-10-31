@@ -12,7 +12,7 @@ export default function Home() {
   but curiosity never left the jungle.`;
 
   return (
-    <div className="md:flex flex-col md:flex-row items-center gap-20 justify-evenly ">
+    <div className="md:flex flex-col md:flex-row items-center mb-40 gap-20 justify-evenly ">
 
       {/* Animated text */}
       <motion.div
