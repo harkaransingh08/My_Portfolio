@@ -47,7 +47,7 @@ export default function Home_2() {
             />
 
           </li>
-          <li className='w-60 mr-6 mb-5 flex justify-center bg-white/10 backdrop-blur-md w-40 h-40 rounded-full p-5 mr-6'>
+          <li className='w-60 mr-6 mb-5 flex items-center justify-center bg-white/10 backdrop-blur-md w-40 h-40 rounded-full p-5 mr-6'>
             <motion.div
 
               animate={{ y: [0, -20, 0] }}
@@ -59,9 +59,9 @@ export default function Home_2() {
               <motion.img
                 src={javascript}
                 alt="JavaScript"
-                className="object-contain"
+                className="object-contain "
                 whileHover={{
-                  scale: 1.6,
+                  scale: 1.4,
                   transition: { duration: 0.15, ease: "easeOut" }
                 }}
               />
@@ -71,10 +71,10 @@ export default function Home_2() {
           </li>
 
 
-          <li className='w-40 flex mr-16 justify-center'>
+          <li className='w-70 items-center  flex  justify-center bg-white/10 backdrop-blur-md w-40 h-40  rounded-full p-5 mr-6'>
 
             <motion.div
-              className='inline-block'
+              className='inline-block '
               animate={{ rotate: [-5, 5, -5] }}
               transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
             >
@@ -82,7 +82,7 @@ export default function Home_2() {
                 src={cLangauga}
                 alt="C Language"
                 whileHover={{
-                  scale: 1.6
+                  scale: 2.1
                 }}
               />
 
@@ -91,7 +91,7 @@ export default function Home_2() {
 
 
           </li>
-          <li className='w-70 flex ml-2 justify-center'>
+          <li className='w-70 flex ml-2 justify-center bg-white/10 backdrop-blur-md w-40 h-40 rounded-full p-5 mr-6'>
 
             <motion.div
               className='inline-block'
@@ -102,14 +102,14 @@ export default function Home_2() {
                 src={html}
                 alt="html"
                 whileHover={{
-                  scale: 1.6,
+                  scale: 1.4,
                   transition: { duration: 0.15 }
                 }}
               />
             </motion.div>
 
           </li>
-          <li className='w-60 mr-3flex justify-center'>
+          <li className='w-60 mr-3flex justify-center bg-white/10 backdrop-blur-md w-40 h-40 rounded-full p-5 mr-6'>
 
             <motion.div
               className="inline-block"
@@ -122,7 +122,7 @@ export default function Home_2() {
                 alt="css"
                 className="object-contain"
                 whileHover={{
-                  scale: 1.2,
+                  scale: 1.6,
                   transition: { duration: 0.15 }
                 }}
               />
