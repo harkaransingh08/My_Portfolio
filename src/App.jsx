@@ -6,6 +6,7 @@ import Navbar from "./Components/Navbar";
 import Home from "./Components/Home";
 import Home_2 from "./Components/Home_2";
 import Experience from './Components/Experience'
+import Projects from './Components/Projects'
 
 export default function App() {
   return (
@@ -27,6 +28,12 @@ export default function App() {
         {/* Layer 3 */}
         <section className=" flex items-center justify-center">
           <Experience />
+        </section>
+
+
+        {/* Layer 4 */}
+        <section className=" flex items-center justify-center">
+          <Projects />
         </section>
         
       </div>
