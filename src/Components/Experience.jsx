@@ -2,9 +2,10 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import "../App.css";
 import { typingText } from '../Animations/Home_animation'
+
 export default function Experience() {
     return (
-        <div>
+        <div className='flex flex-col gap-5 items-center'>
             <ul>
                 <motion.h1
                     initial={{ opacity: 0, x: -50 }}
@@ -43,10 +44,10 @@ export default function Experience() {
 
                 </motion.h1>
 
-                <ul className='flex flex-col gap-5  font-semibold'
+                <ul className='flex flex-col gap-6  font-semibold'
                 style={{ fontFamily: "'Oswald', sans-serif" }}
                 >
-                    <h1 className='text-2xl cursor-pointer hover:scale-120 transition-all ml-30 W-100 mr-50 bg-blue-600 text-red-300 h-10  rounded-xl hover:underline'>Front-End Developer Intern | TechNova Labs     (June 2025 – Sept 2025)</h1>
+                    <h1 className='text-2xl cursor-pointer hover:scale-120 transition-all ml-30 W-100 mr-50 bg-blue-600 text-red-300 h-10  rounded-xl hover:underline'>:) Front-End Developer Intern | TechNova Labs     (June 2025 – Sept 2025)</h1>
                     <li className='cursor-pointer hover:text-yellow-400 hover:scale-110 transition-all'>Collaborated with a small team to design and develop responsive web pages using React and Tailwind CSS.</li><hr />
                     <li  className='cursor-pointer hover:text-yellow-400 hover:scale-110 transition-all'>Worked on improving UI performance and optimizing code for better load times.</li><hr />
                     <li  className='cursor-pointer hover:text-yellow-400 hover:scale-110 transition-all'>Assisted in testing and debugging across multiple browsers and devices.</li><hr />
@@ -54,9 +55,6 @@ export default function Experience() {
                     <li  className='cursor-pointer hover:text-yellow-400 hover:scale-110 transition-all'>Experimented with APIs, animations, and performance optimization techniques.</li><hr />
                    
                 </ul>
-
-
-
         </div>
     )
 }

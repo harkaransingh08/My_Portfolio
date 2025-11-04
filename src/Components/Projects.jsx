@@ -8,7 +8,7 @@ export default function Project() {
     const ProjectData = [
         {
             projectName: 'Portfolio',
-            img: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=500&h=300&fit=crop',
+            img: 'https://st2.depositphotos.com/1032577/6582/i/450/depositphotos_65828845-stock-photo-portfolio-written-on-notebook.jpg',
             des: 'A modern, responsive portfolio website showcasing my projects and skills with smooth animations and clean design.',
             tech: ['React', 'Vite', 'Tailwind CSS', 'Framer Motion', 'Lucide Icons'],
             startDate: '02-Oct-2025',
@@ -22,7 +22,7 @@ export default function Project() {
             projectName: 'E-Book Platform',
             des: 'A full-stack e-book platform with user authentication, book uploads, and digital reading capabilities.',
             tech: ['React', 'Vite', 'Tailwind CSS', 'Framer Motion', 'Lucide Icons', 'NodeJs', 'ExpressJs', 'MongoDB', 'Mongoose', 'Cloudinary'],
-            img: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&h=300&fit=crop',
+            img: 'https://img.freepik.com/free-photo/tablet-near-pile-books_23-2147845947.jpg?semt=ais_hybrid&w=740&q=80',
             startDate: '05-Nov-2025',
             endDate: '07-April-2026',
             deploymentLink: 'https://manoj-dev.github.io/Portfolio/',
@@ -32,7 +32,7 @@ export default function Project() {
         },
         {
             projectName: 'Messenger App',
-            img: 'https://images.unsplash.com/photo-1587560699334-cc4ff634909a?w=500&h=300&fit=crop',
+            img: 'https://media.istockphoto.com/id/1412219027/vector/online-chat-windows-mobile-application.jpg?s=612x612&w=0&k=20&c=F2zlUrjj9IRzIfdSMvfCN05ISGHZ0Q2QI9atDeUis68=',
             deploymentLink: 'https://manoj-dev.github.io/Portfolio/',
             des: 'Real-time messaging application with modern UI/UX, file sharing, and group chat functionality.',
             tech: ['React', 'Vite', 'Tailwind CSS', 'Framer Motion', 'Lucide Icons', 'NodeJs', 'ExpressJs', 'MongoDB', 'Mongoose', 'Cloudinary'],
@@ -43,7 +43,7 @@ export default function Project() {
             endDate: '19-Sep-2026'
         },
         {
-            img: 'https://images.unsplash.com/photo-1551650975-87deedd944c3?w=500&h=300&fit=crop',
+            img: 'https://www.cflowapps.com/wp-content/uploads/2018/07/task-management-process.png',
             projectName: 'Task Management',
             deploymentLink: 'https://manoj-dev.github.io/Portfolio/',
             des: 'Productivity app with drag-and-drop functionality, team collaboration, and progress tracking.',

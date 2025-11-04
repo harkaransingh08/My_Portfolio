@@ -7,6 +7,7 @@ import Home from "./Components/Home";
 import Home_2 from "./Components/Home_2";
 import Experience from './Components/Experience'
 import Projects from './Components/Projects'
+import Contact from './Components/Contact'
 
 export default function App() {
   return (
@@ -35,6 +36,11 @@ export default function App() {
         <section className=" flex items-center justify-center">
           <Projects />
         </section>
+
+        {/* Layer 5 */} 
+        <div className="bg-gray-800">
+          <Contact />
+        </div>
         
       </div>
     </ReactLenis>
