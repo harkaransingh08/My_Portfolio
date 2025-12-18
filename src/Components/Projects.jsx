@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ExternalLink, Github, Calendar, Code, ChevronRight, Filter } from 'lucide-react';
+import elevate from './Images/elevate.png'
 
 export default function Project() {
     const [filter, setFilter] = useState('All');
 
     const ProjectData = [
         {
-            projectName: 'Portfolio',
+            projectName: 'PORTFOLIO',
             img: 'https://st2.depositphotos.com/1032577/6582/i/450/depositphotos_65828845-stock-photo-portfolio-written-on-notebook.jpg',
             des: 'A modern, responsive portfolio website showcasing my projects and skills with smooth animations and clean design.',
             tech: ['React', 'Vite', 'Tailwind CSS', 'Framer Motion', 'Lucide Icons'],
@@ -16,47 +17,35 @@ export default function Project() {
             info: "Frontend Project",
             category: "Frontend",
             githubLink: 'https://github.com/Manoj-Dev/Portfolio',
-            deploymentLink: 'https://manoj-dev.github.io/Portfolio/'
+            deploymentLink: 'https://myportfolio-six-inky.vercel.app/'
         },
         {
-            projectName: 'E-Book Platform',
+            projectName: 'OTT-PLATFORM ',
             des: 'A full-stack e-book platform with user authentication, book uploads, and digital reading capabilities.',
             tech: ['React', 'Vite', 'Tailwind CSS', 'Framer Motion', 'Lucide Icons', 'NodeJs', 'ExpressJs', 'MongoDB', 'Mongoose', 'Cloudinary'],
-            img: 'https://img.freepik.com/free-photo/tablet-near-pile-books_23-2147845947.jpg?semt=ais_hybrid&w=740&q=80',
+            img: elevate,
             startDate: '05-Nov-2025',
-            endDate: '07-April-2026',
-            deploymentLink: 'https://manoj-dev.github.io/Portfolio/',
+            endDate: '20-Dec-2025',
+            deploymentLink: 'https://elevate-2.vercel.app/',
             info: "Full Stack Project",
             category: "Full Stack",
-            githubLink: 'https://github.com/Manoj-Dev/Portfolio',
+            githubLink: 'https://github.com/harkaransingh08/my_portfolio.git',
         },
         {
-            projectName: 'Messenger App',
-            img: 'https://media.istockphoto.com/id/1412219027/vector/online-chat-windows-mobile-application.jpg?s=612x612&w=0&k=20&c=F2zlUrjj9IRzIfdSMvfCN05ISGHZ0Q2QI9atDeUis68=',
+            projectName: 'BLENDER',
+            img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7A966nawqqzga9Qz0b9t9x123DoiWMXiBhYtit6TCuw&s',
             deploymentLink: 'https://manoj-dev.github.io/Portfolio/',
-            des: 'Real-time messaging application with modern UI/UX, file sharing, and group chat functionality.',
+            des: 'A 3D model viewer web application that allows users to upload, view, and interact with 3D models in various formats directly in the browser.',
             tech: ['React', 'Vite', 'Tailwind CSS', 'Framer Motion', 'Lucide Icons', 'NodeJs', 'ExpressJs', 'MongoDB', 'Mongoose', 'Cloudinary'],
             startDate: '02-May-2026',
-            info: "Full Stack Project",
+            info: "3D-MODELS Project",
             category: "Full Stack",
             githubLink: 'https://github.com/Manoj-Dev/Portfolio',
-            endDate: '19-Sep-2026'
-        },
-        {
-            img: 'https://www.cflowapps.com/wp-content/uploads/2018/07/task-management-process.png',
-            projectName: 'Task Management',
-            deploymentLink: 'https://manoj-dev.github.io/Portfolio/',
-            des: 'Productivity app with drag-and-drop functionality, team collaboration, and progress tracking.',
-            tech: ['React', 'Vite', 'Tailwind CSS', 'Framer Motion', 'Lucide Icons', 'NodeJs', 'ExpressJs', 'MongoDB', 'Mongoose'],
-            startDate: '02-May-2026',
-            info: "Full Stack Project",
-            category: "Full Stack",
-            githubLink: 'https://github.com/Manoj-Dev/Portfolio',
-            endDate: '19-Sep-2026'
+
         },
     ];
 
-    const categories = ['All', 'Frontend', 'Full Stack'];
+    const categories = ['All', 'Frontend', 'Full Stack','3D-MODELS'];
     const filteredProjects = filter === 'All'
         ? ProjectData
         : ProjectData.filter(project => project.category === filter);

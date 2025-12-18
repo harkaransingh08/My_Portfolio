@@ -1,60 +1,98 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import "../App.css";
-import { typingText } from '../Animations/Home_animation'
+
+const container = {
+  hidden: {},
+  visible: {
+    transition: {
+      staggerChildren: 0.15
+    }
+  }
+}
+
+const item = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0 }
+}
 
 export default function Experience() {
-    return (
-        <div className='flex flex-col gap-5 items-center'>
-            <ul>
-                <motion.h1
-                    initial={{ opacity: 0, x: -50 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 0.8, ease: "easeOut" }}
+  return (
+    <div className="flex justify-center mt-24 px-6">
+      <div className="flex flex-col lg:flex-row gap-20 max-w-6xl w-full">
 
-                ><h1 className="flex justify-center  mt-20 w-100 items-center font-bold  text-4xl hover:underline transition-all duration-300 text-white cursor-pointer hover:text-yellow-400  bg-white/10 backdrop-blur-md px-10 py-3 rounded-full m-10 ml-60 mr-60"
-                    style={{ fontFamily: "'Oswald', sans-serif" }}
-                >
-                        Education
-                    </h1>
+        {/* ================= EDUCATION ================= */}
+        <motion.div
+          variants={container}
+          initial="hidden"
+          whileInView="visible"
+          className="flex-1 flex flex-col items-center gap-10"
+        >
+          <motion.h1
+            whileHover={{ scale: 1.05 }}
+            className="bg-white/10 backdrop-blur-md px-12 py-4 rounded-full text-4xl font-bold text-white"
+          >
+            Education
+          </motion.h1>
 
-                </motion.h1>
-             </ul>
+          <div className="w-full flex flex-col gap-8">
+            {[
+              "I am a recent graduate with a degree in Computer Science.",
+              "Strong foundation in programming languages, algorithms, and data structures.",
+              "Passionate about coding and problem-solving."
+            ].map((text, i) => (
+              <motion.div
+                key={i}
+                variants={item}
+                whileHover={{ scale: 1.03 }}
+                className="relative bg-white/5 backdrop-blur-md p-6 rounded-2xl text-center text-white font-semibold
+                           shadow-lg hover:shadow-yellow-400/20 transition-all duration-300"
+              >
+                {text}
+                <span className="absolute left-1/2 -bottom-2 w-16 h-[2px] bg-yellow-400 -translate-x-1/2 opacity-60"></span>
+              </motion.div>
+            ))}
+          </div>
+        </motion.div>
 
+        {/* ================= EXPERIENCE ================= */}
+        <motion.div
+          variants={container}
+          initial="hidden"
+          whileInView="visible"
+          className="flex-1 flex flex-col items-center gap-10"
+        >
+          <motion.h1
+            whileHover={{ scale: 1.05 }}
+            className="bg-white/10 backdrop-blur-md px-12 py-4 rounded-full text-4xl font-bold text-white"
+          >
+            My Experience
+          </motion.h1>
 
-             <ul className='flex flex-col gap-5 list justify-evenly font-semibold'
-             style={{ fontFamily: "'Oswald', sans-serif" }}
-             >
-                <li className='cursor-pointer hover:text-yellow-400 hover:scale-110 transition-all '>I am a recent graduate with a degree in Computer Science.</li> <hr />
-                <li className='cursor-pointer hover:text-yellow-400 hover:scale-110 transition-all '>I have a strong foundation in programming languages, algorithms, and data structures.</li> <hr />
-                <li className='cursor-pointer hover:text-yellow-400 hover:scale-110 transition-all '>I am passionate about coding and problem-solving.</li> <hr />
-                
-             </ul>
+          
+          <div className="w-full flex flex-col gap-6">
+            {[
+              "Collaborated with a team to build responsive web pages using React and Tailwind CSS.",
+              "Improved UI performance and optimized code for faster load times.",
+              "Tested and debugged across multiple browsers and devices.",
+              "Built multiple projects using React, Tailwind, and motion animations.",
+              "Experimented with APIs, animations, and performance optimizations."
+            ].map((text, i) => (
+              <motion.div
+                key={i}
+                variants={item}
+                whileHover={{ scale: 1.03 }}
+                className="relative bg-white/5 backdrop-blur-md p-6 rounded-2xl text-white font-semibold
+                           shadow-lg hover:shadow-cyan-400/20 transition-all duration-300"
+              >
+                {text}
+                <span className="absolute left-1/2 -bottom-2 w-20 h-[2px] bg-cyan-400 -translate-x-1/2 opacity-60"></span>
+              </motion.div>
+            ))}
+          </div>
+        </motion.div>
 
-            <motion.h1
-                    initial={{ opacity: 0, x: -50 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 0.8, ease: "easeOut" }}
-
-                ><h1 className="flex justify-center w-100 items-center font-bold mt-30 text-4xl hover:underline transition-all duration-300 text-white cursor-pointer hover:text-yellow-400  bg-white/10 backdrop-blur-md px-10 py-3 rounded-full m-10 ml-60 mr-60"
-                    style={{ fontFamily: "'Oswald', sans-serif" }}
-                >
-                        My Experience
-                    </h1>
-
-                </motion.h1>
-
-                <ul className='flex flex-col gap-6  font-semibold'
-                style={{ fontFamily: "'Oswald', sans-serif" }}
-                >
-                    <h1 className='text-2xl cursor-pointer hover:scale-120 transition-all ml-30 W-100 mr-50 bg-blue-600 text-red-300 h-10  rounded-xl hover:underline'>:) Front-End Developer Intern | TechNova Labs     (June 2025 – Sept 2025)</h1>
-                    <li className='cursor-pointer hover:text-yellow-400 hover:scale-110 transition-all'>Collaborated with a small team to design and develop responsive web pages using React and Tailwind CSS.</li><hr />
-                    <li  className='cursor-pointer hover:text-yellow-400 hover:scale-110 transition-all'>Worked on improving UI performance and optimizing code for better load times.</li><hr />
-                    <li  className='cursor-pointer hover:text-yellow-400 hover:scale-110 transition-all'>Assisted in testing and debugging across multiple browsers and devices.</li><hr />
-                    <li  className='cursor-pointer hover:text-yellow-400 hover:scale-110 transition-all'>Built multiple web projects using React, Tailwind, and motion animations.</li><hr />
-                    <li  className='cursor-pointer hover:text-yellow-400 hover:scale-110 transition-all'>Experimented with APIs, animations, and performance optimization techniques.</li><hr />
-                   
-                </ul>
-        </div>
-    )
+      </div>
+    </div>
+  )
 }

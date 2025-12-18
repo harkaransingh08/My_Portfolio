@@ -7,31 +7,32 @@ import css from './Images/css.png'
 import "../App.css";
 import { motion } from "framer-motion";
 import { typingText } from '../Animations/Home_animation'
+import blender from '../Components/Images/blender.png'
 
 
 export default function Home_2() {
   return (
-    <div >
+    <div>
 
       <motion.h1
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
         
-      ><h1 className="flex justify-center items-center font-bold  text-4xl hover:underline transition-all duration-300 text-white cursor-pointer hover:text-yellow-400  bg-white/10 backdrop-blur-md px-10 py-3 rounded-full m-10 ml-60 mr-60"
+      ><h1 className="flex justify-center items-center font-bold  text-4xl hover:underline transition-all duration-300 text-white cursor-pointer hover:text-yellow-400  bg-white/10 backdrop-blur-md px-10 py-3 rounded-full m-10 mx-auto"
         style={{ fontFamily: "'Oswald', sans-serif" }}
         variants={typingText}
          initial="hidden"
         whileInView="visible"
         >
-          The Languages I Learned
+          What I Learned
         </h1>
 
       </motion.h1>
 
 
-      <div className='cursor-pointer mt-10 items-center'>
-        <ul className='flex justify-evenly items-center gap-10 px-0 flex-wrap mb-90  '>
+      <div className='cursor-pointer mt-10 flex justify-center'>
+        <ul className='flex justify-center items-center gap-10 px-0 flex-wrap mb-90 mx-auto'>
           <li>
             <div className="flex justify-center w-50 mt-10 items-center bg-white/10 backdrop-blur-md w-40 h-40 rounded-full p-5 mb-3">
               <motion.img
@@ -49,7 +50,7 @@ export default function Home_2() {
               />
 
             </div>
-            <motion.ul className='text-md bg-white/10 backdrop-blur-md rounded-full p-5 mr-6 font-bold flex flex-col gap-5 text-white text-center max-w-[190px] mt-6'
+            <motion.ul className='text-lg bg-white/10 backdrop-blur-md justify-between  rounded-4xl h-150 p-5 mr-6 font-bold flex flex-col gap-5 text-white text-center max-w-[190px] mt-6'
               style={{ fontFamily: "'Oswald', sans-serif" }}
               animate={{ y: [0, -7, 0] }}
               transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
@@ -66,7 +67,8 @@ export default function Home_2() {
           </li>
 
           <li>
-            <div className='w-50 mt-30 flex items-center justify-center bg-white/10 backdrop-blur-md w-40 h-40 rounded-full p-5 mr-6'>
+            <div className='w-50 mt-10 flex items-center justify-center bg-white/10 backdrop-blur-md w-40 h-40 rounded-full p-5 mx-auto
+'>
               <motion.div
 
                 animate={{ y: [0, -20, 0] }}
@@ -88,7 +90,7 @@ export default function Home_2() {
               </motion.div>
             </div>
 
-            <motion.ul className='text-md font-bold bg-white/10 backdrop-blur-md rounded-full p-5 mr-6 flex flex-col gap-5 text-white text-center max-w-[190px] mt-6'
+            <motion.ul className='text-lg font-bold bg-white/10 backdrop-blur-md justify-between h-150 rounded-4xl p-5 mx-auto flex flex-col gap-5 text-white text-center max-w-[190px] mt-6'
               style={{ fontFamily: "'Oswald', sans-serif" }}
               animate={{ y: [0, -7, 0] }}
               transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
@@ -106,7 +108,8 @@ export default function Home_2() {
 
 
           <li>
-            <div className='w-50 items-center mt-29 flex  justify-center bg-white/10 backdrop-blur-md w-40 h-40  rounded-full p-5 mr-6'>
+            <div className='w-50 items-center mt-10 flex  justify-center bg-white/10 backdrop-blur-md w-40 h-40  rounded-full p-5 mx-auto
+'>
 
               <motion.div
                 className='inline-block '
@@ -124,7 +127,8 @@ export default function Home_2() {
               </motion.div>
 
             </div>
-            <motion.ul className='text-md font-bold flex flex-col gap-5  bg-white/10 backdrop-blur-md rounded-full p-5 mr-6 text-white text-center max-w-[190px] mt-6 '
+            <motion.ul className='text-lg font-bold flex flex-col gap-5 h-150 justify-between bg-white/10 backdrop-blur-md rounded-4xl p-5 mx-auto
+ text-white text-center max-w-[190px] mt-6 '
               style={{ fontFamily: "'Oswald', sans-serif" }}
               animate={{ y: [0, -7, 0] }}
               transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
@@ -142,7 +146,7 @@ export default function Home_2() {
 
 
           <li >
-            <div className='w-50 flex mt-10 items-center justify-center bg-white/10 backdrop-blur-md w-40 h-40 rounded-full p-5 mr-6'>
+            <div className='w-50 flex mt-10 items-center justify-center bg-white/10 backdrop-blur-md w-40 h-40 rounded-full p-5 mx-auto'>
               <motion.div
                 className='inline-block'
                 animate={{ scale: [1, 1.2, 1] }}
@@ -158,7 +162,7 @@ export default function Home_2() {
                 />
               </motion.div>
             </div>
-            <motion.ul className='text-md font-bold bg-white/10 backdrop-blur-md rounded-full p-5 mr-6 flex flex-col gap-5 text-white text-center max-w-[190px] mt-6 '
+            <motion.ul className='text-lg font-bold bg-white/10 h-150 backdrop-blur-md justify-between rounded-4xl p-5 mr-6 flex flex-col gap-5 text-white text-center max-w-[190px] mt-6 '
               style={{ fontFamily: "'Oswald', sans-serif" }}
               animate={{ y: [0, -7, 0] }}
               transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
@@ -172,7 +176,7 @@ export default function Home_2() {
 
 
           <li >
-            <div className='w-50 mr-3 mt-20 flex justify-center bg-white/10 backdrop-blur-md w-40 h-40 rounded-full p-5 mr-6'>
+            <div className='w-50  mt-9 flex justify-center bg-white/10 backdrop-blur-md w-40 h-40 rounded-full p-5 mr-6'>
               <motion.div
                 className="inline-block"
                 animate={{ rotate: [0, 10, -10, 0] }}
@@ -191,7 +195,7 @@ export default function Home_2() {
               </motion.div>
 
             </div>
-            <motion.ul className='text-md flex flex-col bg-white/10 mt-5 backdrop-blur-md rounded-full p-5 mr-6 font-bold gap-5 text-white text-center max-w-[190px] '
+            <motion.ul className='text-lg flex flex-col h-150 bg-white/10 mt-5 backdrop-blur-md justify-between rounded-4xl p-5 mr-6 font-bold gap-5 text-white text-center max-w-[190px] '
               style={{ fontFamily: "'Oswald', sans-serif" }}
               animate={{ y: [0, -7, 0] }}
               transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
@@ -202,8 +206,44 @@ export default function Home_2() {
               <li className='hover:text-cyan-400 hover:scale-110 transition-transform duration-300'>Optimized for performance and accessibility</li>
             </motion.ul>
           </li>
+        <li >
+            <div className='w-50  mt-9 flex justify-center bg-white/10 backdrop-blur-md w-40 h-40 rounded-full p-5 mr-6'>
+               <motion.div
+
+                animate={{ y: [0, -20, 0] }}
+                transition={{ duration: 3, repeat: Infinity, ease: "linear" }}
+                className='inline-block'
+
+              >
+                <motion.img
+
+                  src={blender}
+                  alt="blender"
+                 className="object-contain "
+                  whileHover={{
+                    scale: 1.4,
+                    transition: { duration: 0.15, ease: "easeOut" }
+                  }}
+                />
+              </motion.div>
+
+            </div>
+            <motion.ul className='text-lg flex flex-col h-150 bg-white/10 mt-5 backdrop-blur-md justify-between rounded-4xl p-5 mr-6 font-bold gap-5 text-white text-center max-w-[190px] '
+              style={{ fontFamily: "'Oswald', sans-serif" }}
+              animate={{ y: [0, -7, 0] }}
+              transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+            >
+              <li className='hover:text-cyan-400 hover:scale-110 transition-transform duration-300' >3D modeling and scene creation</li><hr />
+              <li className='hover:text-cyan-400 hover:scale-110 transition-transform duration-300'>Lighting, materials, and texturing for realistic visual</li><hr />
+              <li className='hover:text-cyan-400 hover:scale-110 transition-transform duration-300'>Animation and camera movement</li><hr />
+              <li className='hover:text-cyan-400 hover:scale-110 transition-transform duration-300'>Rendering with Cycles and Eevee</li>
+            </motion.ul>
+          </li>
+          
         </ul>
+        
         <hr />
+        
       </div>
     </div>
   )
