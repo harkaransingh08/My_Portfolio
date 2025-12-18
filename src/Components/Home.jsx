@@ -1,22 +1,20 @@
 import React from "react";
-import pfp from "./Images/pfp.png";
+import pfp from "./Images/karan.jpg";
 import { motion } from "framer-motion";
 import { fadeInUp, typingText, typingLetter } from "../Animations/Home_animation";
 import "../App.css";
 
 export default function Home() {
-  const text = `I’m Monkey, a curious mind trapped in a suit, driven by instinct and imagination.
-  I believe in solving complex problems with simple ideas, learning fast, and adapting faster.
-  Whether it’s coding, creating, or just figuring out how the world works, I approach every challenge
-  with a mix of logic, curiosity, and a bit of wild energy. Intelligence may have evolved,
-  but curiosity never left the jungle.`;
+  const text = `’m a developer who enjoys building clean, interactive web experiences and learning how things work under the hood. I work primarily with React, Tailwind CSS, and modern JavaScript, and I like combining smooth UI animations with solid logic.
+
+I’ve built full projects ranging from responsive front-end applications to full-stack platforms, and I’m also exploring 3D design and animation using Blender. I care about performance, usability, and writing code that makes sense not just today, but later.`;
 
   return (
     <div className="md:flex flex-col md:flex-row  items-center mb-40 gap-20 justify-evenly ">
 
       {/* Animated text */}
       <motion.div
-        className="max-w-xl text-justify leading-relaxed text-white text-2xl font-medium  font-oswald"
+        className="max-w-xl text-justify leading-relaxed text-gray-300 text-2xl font-medium  font-oswald"
         variants={typingText}
         style={{ fontFamily: "'Oswald', sans-serif" }}
         initial="hidden"
@@ -38,7 +36,7 @@ export default function Home() {
         <img
           src={pfp}
           alt="image"
-          className="flex rounded-full  h-70 bg-[#080029]"
+          className="flex rounded-full  h-120 w-95 bg-[#080029]"
         />
       </motion.div>
     </div>

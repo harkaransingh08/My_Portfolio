@@ -13,7 +13,7 @@ export default function App() {
   return (
     // 2. WRAP YOUR ENTIRE APP WITH THIS COMPONENT
     <ReactLenis root>
-      <div className="relative text-white overflow-x-hidden bg-gradient-to-b from-[#000000] via-[#0a0047] to-[#020024]">
+      <div className="relative text-white overflow-x-hidden bg-linear-to-b from-[#000000] via-[#0a0047] to-[#020024]">
         <Navbar />
 
         {/* Layer 1 */}
@@ -22,7 +22,7 @@ export default function App() {
         </section>
 
         {/* Layer 2 */}
-        <section className="min-h-screen flex items-center justify-center">
+        <section className=" flex items-center justify-center">
           <Home_2 />
         </section>
 
