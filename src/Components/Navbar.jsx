@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import logo from './Images/logo.png';
 import { BookOpenText, PackageOpen, Headset, Menu, X } from "lucide-react";
+import { Link } from "react-router-dom";
+
 
 export default function Navbar() {
   const [isVisible, setIsVisible] = useState(false);
@@ -23,7 +25,7 @@ export default function Navbar() {
   }, [isMenuOpen]);
 
   const NavBar = [
-    { name: "Summry", path: "/summary", icon: <BookOpenText /> },
+    { name: "I learned", path: "/What i learned", icon: <BookOpenText /> },
     { name: "Projects", path: "/projects", icon: <PackageOpen /> },
     { name: "Contact", path: "/contact", icon: <Headset /> },
   ];

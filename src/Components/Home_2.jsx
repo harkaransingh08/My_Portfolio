@@ -233,10 +233,10 @@ export default function Home_2() {
               animate={{ y: [0, -7, 0] }}
               transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
             >
-              <li className='hover:text-cyan-400 hover:scale-110 transition-transform duration-300' >3D modeling and scene creation</li><hr />
-              <li className='hover:text-cyan-400 hover:scale-110 transition-transform duration-300'>Lighting, materials, and texturing for realistic visual</li><hr />
-              <li className='hover:text-cyan-400 hover:scale-110 transition-transform duration-300'>Animation and camera movement</li><hr />
-              <li className='hover:text-cyan-400 hover:scale-110 transition-transform duration-300'>Rendering with Cycles and Eevee</li>
+              <li className='hover:text-orange-400 hover:scale-110 transition-transform duration-300' >3D modeling and scene creation</li><hr />
+              <li className='hover:text-orange-400 hover:scale-110 transition-transform duration-300'>Lighting, materials, and texturing for realistic visual</li><hr />
+              <li className='hover:text-orange-400 hover:scale-110 transition-transform duration-300'>Animation and camera movement</li><hr />
+              <li className='hover:text-orange-400 hover:scale-110 transition-transform duration-300'>Rendering with Cycles and Eevee</li>
             </motion.ul>
           </li>
           

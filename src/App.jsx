@@ -38,7 +38,7 @@ export default function App() {
         </section>
 
         {/* Layer 5 */} 
-        <div className="bg-gray-800">
+        <div className="bg-gray-800/50 rounded-4xl">
           <Contact />
         </div>
         

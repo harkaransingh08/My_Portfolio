@@ -30,7 +30,8 @@ export default function Experience() {
         >
           <motion.h1
             whileHover={{ scale: 1.05 }}
-            className="bg-white/10 backdrop-blur-md px-12 py-4 rounded-full text-4xl font-bold text-white"
+            className="bg-white/10 backdrop-blur-md px-12 hover:text-yellow-400 py-4 rounded-full text-4xl font-bold text-white"
+            style={{ fontFamily: "'Oswald', sans-serif" }}
           >
             Education
           </motion.h1>
@@ -64,7 +65,8 @@ export default function Experience() {
         >
           <motion.h1
             whileHover={{ scale: 1.05 }}
-            className="bg-white/10 backdrop-blur-md px-12 py-4 rounded-full text-4xl font-bold text-white"
+            className="bg-white/10 backdrop-blur-md px-12 hover:text-yellow-400 py-4 rounded-full text-4xl font-bold text-white"
+            style={{ fontFamily: "'Oswald', sans-serif" }}
           >
             My Experience
           </motion.h1>

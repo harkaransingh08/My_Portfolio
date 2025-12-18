@@ -23,6 +23,7 @@ export default function Contact() {
           className="bg-white/10 backdrop-blur-md px-14 flex justify-center py-4 rounded-full
                      text-4xl font-bold text-white w-200 hover:text-pink-500
                      hover:underline transition-all duration-300"
+                     style={{ fontFamily: "'Oswald', sans-serif" }}
         >
           Contact
         </motion.h1>
@@ -44,7 +45,7 @@ export default function Contact() {
 
           {/* Email */}
           <motion.a
-            href="mailto:yourmail@example.com"
+            href="harkaransingh08ktl@gmail.com"
             whileHover={{ scale: 1.05 }}
             className="flex items-center gap-4 bg-white/5 backdrop-blur-md
                        p-6 rounded-2xl text-pink-400 font-semibold
@@ -56,7 +57,7 @@ export default function Contact() {
 
           {/* Phone */}
           <motion.a
-            href="tel:+910000000000"
+            href="tel:+919416384630"
             whileHover={{ scale: 1.05 }}
             className="flex items-center gap-4 bg-white/5 backdrop-blur-md
                        p-6 rounded-2xl text-white font-semibold
