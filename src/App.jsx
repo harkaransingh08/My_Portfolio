@@ -19,7 +19,7 @@ export default function App() {
         </section>
 
         {/* Layer 2 */}
-        <section className="flex items-center justify-center min-h-screen px-4 sm:px-6 lg:px-12 mt-10 sm:mt-24 lg:mt-32">
+        <section className="flex items-center lg:h-400 justify-center min-h-screen px-4 sm:px-6 lg:px-12  sm:mt-24 lg:mt-32">
           <Home_2 />
         </section>
 
