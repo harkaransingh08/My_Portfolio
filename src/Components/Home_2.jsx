@@ -32,9 +32,9 @@ export default function Home_2() {
 
 
       <div className='cursor-pointer mt-10 flex justify-center'>
-        <ul className='flex justify-center items-center gap-10 px-0 flex-wrap mb-90 mx-auto'>
+        <ul className='flex justify-center items-center gap-25  flex-wrap mb-90 mx-auto'>
           <li>
-            <div className="flex justify-center w-50 mt-10 items-center bg-white/10 backdrop-blur-md w-40 h-40 rounded-full p-5 mb-3">
+            <div className="flex justify-center  mt-10 items-center bg-white/10 backdrop-blur-md w-40 h-40 rounded-full p-5 mb-3">
               <motion.img
                 src={ReactLogo}
                 alt="React"
