@@ -1,5 +1,3 @@
-// src/App.jsx (Updated with Lenis)
-
 import React from "react";
 import { ReactLenis } from 'lenis/react'; // 1. ADD THIS IMPORT
 import Navbar from "./Components/Navbar";
@@ -17,12 +15,12 @@ export default function App() {
         <Navbar />
 
         {/* Layer 1 */}
-        <section className="min-h-screen flex items-center justify-center">
+        <section className=" flex items-center justify-center">
           <Home />
         </section>
 
         {/* Layer 2 */}
-        <section className=" flex items-center justify-center">
+        <section className=" flex items-center h-200 mt-50 justify-center">
           <Home_2 />
         </section>
 

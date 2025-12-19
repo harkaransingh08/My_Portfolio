@@ -18,10 +18,9 @@ const item = {
 
 export default function Experience() {
   return (
-    <div className="flex justify-center mt-24 px-6">
+    <div className="flex justify-center ">
       <div className="flex flex-col lg:flex-row gap-20 max-w-6xl w-full">
 
-        {/* ================= EDUCATION ================= */}
         <motion.div
           variants={container}
           initial="hidden"
@@ -30,7 +29,7 @@ export default function Experience() {
         >
           <motion.h1
             whileHover={{ scale: 1.05 }}
-            className="bg-white/10 backdrop-blur-md px-12 hover:text-yellow-400 py-4 rounded-full text-4xl font-bold text-white"
+            className="bg-white/10 backdrop-blur-md px-12 hover:text-yellow-400  rounded-full text-4xl font-bold text-white"
             style={{ fontFamily: "'Oswald', sans-serif" }}
           >
             Education
