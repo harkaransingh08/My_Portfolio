@@ -53,10 +53,8 @@ I’ve built full projects ranging from responsive front-end applications to ful
           alt="image"
           className="
             rounded-full bg-[#080029]
-            h-100 w-52
-            sm:h-64 sm:w-64
-            md:h-72 md:w-72
-            lg:h-96 lg:w-96
+            h-100 w-95
+           
             
           "
         />
