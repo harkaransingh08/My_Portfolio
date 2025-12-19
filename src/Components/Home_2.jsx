@@ -221,7 +221,7 @@ export default function Home_2() {
                   alt="blender"
                  className="object-contain "
                   whileHover={{
-                    scale: 1.4,
+                    scale: 1.2,
                     transition: { duration: 0.15, ease: "easeOut" }
                   }}
                 />

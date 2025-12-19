@@ -74,16 +74,12 @@ export default function Project() {
 
         {/* Header */}
         <motion.h1
-          initial={{ opacity: 0, x: -50 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8 }}
-          className="mt-20 bg-white/10 backdrop-blur-md px-10 py-3 rounded-full
-                     text-4xl font-bold text-white hover:text-yellow-400
-                     hover:underline transition-all duration-300"
-                     style={{ fontFamily: "'Oswald', sans-serif" }}
-        >
-          My Projects
-        </motion.h1>
+                   whileHover={{ scale: 1.05 }}
+                   className="bg-white/10 backdrop-blur-md px-12 hover:text-yellow-400 py-4 rounded-full text-4xl font-bold text-white"
+                   style={{ fontFamily: "'Oswald', sans-serif" }}
+                 >
+                   My Projects
+                 </motion.h1>
 
         {/* Filters */}
         <div className="flex justify-center my-10">
