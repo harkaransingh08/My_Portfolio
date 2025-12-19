@@ -63,37 +63,56 @@ export default function Project() {
   ];
 
   const categories = ['All', 'Frontend', 'Full Stack', '3D-MODELS'];
+
   const filteredProjects =
     filter === 'All'
       ? ProjectData
       : ProjectData.filter(p => p.category === filter);
 
   return (
-    <div className="min-h-screen py-12 px-10">
-      <div className="flex flex-col items-center mx-auto">
+    <div className="min-h-screen py-12 px-4 sm:px-6 lg:px-10">
+      <div className="flex flex-col items-center mx-auto max-w-7xl">
 
         {/* Header */}
         <motion.h1
-                   whileHover={{ scale: 1.05 }}
-                   className="bg-white/10 backdrop-blur-md px-12 hover:text-yellow-400 py-4 rounded-full text-4xl font-bold text-white"
-                   style={{ fontFamily: "'Oswald', sans-serif" }}
-                 >
-                   My Projects
-                 </motion.h1>
+          whileHover={{ scale: 1.05 }}
+          className="
+            bg-white/10 backdrop-blur-md
+            px-6 sm:px-10 py-3 sm:py-4
+            rounded-full
+            text-2xl sm:text-3xl lg:text-4xl
+            font-bold text-white
+            hover:text-yellow-400
+            transition-all
+          "
+          style={{ fontFamily: "'Oswald', sans-serif" }}
+        >
+          My Projects
+        </motion.h1>
 
         {/* Filters */}
-        <div className="flex justify-center my-10">
-          <div className="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-2 flex gap-2 border border-slate-700">
-            <Filter className="w-5 h-5 text-purple-400 mt-1" />
+        <div className="flex justify-center my-8 sm:my-10">
+          <div className="
+            bg-slate-800/50 backdrop-blur-sm
+            rounded-2xl p-2
+            flex flex-wrap items-center gap-2
+            border border-slate-700
+          ">
+            <Filter className="w-5 h-5 text-purple-400" />
             {categories.map(category => (
               <button
                 key={category}
                 onClick={() => setFilter(category)}
-                className={`px-4 py-2 rounded-xl font-semibold transition-all ${
-                  filter === category
-                    ? 'bg-gradient-to-r from-purple-600 to-pink-600 text-white'
-                    : 'text-gray-400 hover:text-white'
-                }`}
+                className={`
+                  px-3 sm:px-4 py-2
+                  rounded-xl font-semibold text-sm sm:text-base
+                  transition-all
+                  ${
+                    filter === category
+                      ? 'bg-gradient-to-r from-purple-600 to-pink-600 text-white'
+                      : 'text-gray-400 hover:text-white'
+                  }
+                `}
               >
                 {category}
               </button>
@@ -104,7 +123,7 @@ export default function Project() {
         {/* Projects Grid */}
         <motion.div
           layout
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8"
         >
           <AnimatePresence>
             {filteredProjects.map(project => (
@@ -112,20 +131,23 @@ export default function Project() {
                 key={project.projectName}
                 layout
                 whileHover={{ y: -10 }}
-                className="bg-slate-800/30 backdrop-blur-sm rounded-3xl
-                           border border-slate-700/50 overflow-hidden shadow-xl
-                           flex flex-col"
+                className="
+                  bg-slate-800/30 backdrop-blur-sm
+                  rounded-3xl border border-slate-700/50
+                  overflow-hidden shadow-xl
+                  flex flex-col
+                "
               >
                 {/* Image */}
                 <img
                   src={project.img}
                   alt={project.projectName}
-                  className="w-full h-48 object-cover"
+                  className="w-full h-40 sm:h-48 object-cover"
                 />
 
                 {/* Content */}
-                <div className="p-6 flex flex-col flex-1">
-                  <h3 className="text-xl font-bold text-white mb-2 flex justify-between">
+                <div className="p-5 sm:p-6 flex flex-col flex-1">
+                  <h3 className="text-lg sm:text-xl font-bold text-white mb-2 flex justify-between">
                     {project.projectName}
                     <ChevronRight className="text-purple-400" />
                   </h3>
@@ -145,19 +167,20 @@ export default function Project() {
                     </div>
                   </div>
 
-                  {/* ACTION BUTTONS */}
+                  {/* Actions */}
                   <div className="mt-auto pt-4 border-t border-slate-700/50 flex gap-3">
-
                     {project.category !== '3D-MODELS' ? (
                       <>
                         <a
                           href={project.githubLink}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="flex-1 flex items-center justify-center gap-2
-                                     bg-slate-700/50 hover:bg-slate-700
-                                     text-gray-300 hover:text-white
-                                     px-4 py-2 rounded-xl transition"
+                          className="
+                            flex-1 flex items-center justify-center gap-2
+                            bg-slate-700/50 hover:bg-slate-700
+                            text-gray-300 hover:text-white
+                            px-4 py-2 rounded-xl transition
+                          "
                         >
                           <Github className="w-4 h-4" />
                           Code
@@ -167,9 +190,11 @@ export default function Project() {
                           href={project.deploymentLink}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="flex-1 flex items-center justify-center gap-2
-                                     bg-gradient-to-r from-purple-600 to-pink-600
-                                     text-white px-4 py-2 rounded-xl transition"
+                          className="
+                            flex-1 flex items-center justify-center gap-2
+                            bg-gradient-to-r from-purple-600 to-pink-600
+                            text-white px-4 py-2 rounded-xl transition
+                          "
                         >
                           <ExternalLink className="w-4 h-4" />
                           Live
@@ -180,15 +205,16 @@ export default function Project() {
                         href={project.instagramLink}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex-1 flex items-center justify-center gap-2
-                                   bg-gradient-to-r from-pink-500 to-purple-500
-                                   text-white px-4 py-2 rounded-xl transition"
+                        className="
+                          flex-1 flex items-center justify-center gap-2
+                          bg-gradient-to-r from-pink-500 to-purple-500
+                          text-white px-4 py-2 rounded-xl transition
+                        "
                       >
                         <Instagram className="w-4 h-4" />
                         Instagram
                       </a>
                     )}
-
                   </div>
                 </div>
               </motion.div>

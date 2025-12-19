@@ -10,11 +10,25 @@ export default function Home() {
 I’ve built full projects ranging from responsive front-end applications to full-stack platforms, and I’m also exploring 3D design and animation using Blender. I care about performance, usability, and writing code that makes sense not just today, but later.`;
 
   return (
-    <div className="md:flex flex-col md:flex-row  items-center mb-40 gap-20 justify-evenly ">
-
+    <div
+      className="
+        flex flex-col-reverse md:flex-row
+        items-center justify-evenly
+        gap-10 sm:gap-14 lg:gap-20
+        mb-24 sm:mb-32 lg:mb-40
+        px-4 sm:px-6 lg:px-12
+      "
+    >
       {/* Animated text */}
       <motion.div
-        className="max-w-xl text-justify leading-relaxed text-gray-300 text-2xl font-medium  font-oswald"
+        className="
+          max-w-xl
+          text-left sm:text-justify
+          leading-relaxed
+          text-gray-300
+          text-base sm:text-lg md:text-xl lg:text-2xl
+          font-medium font-oswald
+        "
         variants={typingText}
         style={{ fontFamily: "'Oswald', sans-serif" }}
         initial="hidden"
@@ -32,11 +46,19 @@ I’ve built full projects ranging from responsive front-end applications to ful
         initial={fadeInUp.initial}
         whileInView={fadeInUp.whileInView}
         transition={{ duration: 1.2, ease: "easeOut" }}
+        className="flex justify-center"
       >
         <img
           src={pfp}
           alt="image"
-          className="flex rounded-full  h-120 w-95 bg-[#080029]"
+          className="
+            rounded-full bg-[#080029]
+            h-100 w-52
+            sm:h-64 sm:w-64
+            md:h-72 md:w-72
+            lg:h-96 lg:w-96
+            
+          "
         />
       </motion.div>
     </div>
