@@ -1,5 +1,5 @@
 import React from "react";
-import pfp from "./Images/karan.jpg";
+import pfp from "./Images/karan.jpeg";
 import { motion, useReducedMotion } from "framer-motion";
 import { fadeInUp, typingText, typingLetter } from "../Animations/Home_animation";
 import "../App.css";
@@ -56,7 +56,7 @@ I’ve built full projects ranging from responsive front-end applications to ful
         <img
           src={pfp}
           alt="image"
-          className="rounded-full bg-[#080029] h-100 w-95"
+          className="rounded-full bg-[#080029] h-100 w-100"
         />
       </motion.div>
     </div>
